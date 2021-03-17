@@ -3,7 +3,7 @@ Name: arcfix
 Version: 0.0.1
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
-Maintainer: Soh Satoh
-Author: Soh Satoh
+Maintainer: Soh Satoh & EVAN
+Author: Soh Satoh & EVAN
 Section: Tweaks
 Depends: mobilesubstrate (>= 0.9.5000)
