@@ -1,6 +1,6 @@
 # EVANArcSupport
 This is a fix for Arc which does not plan to support iOS14.
 
-Install this framework and change the HEX data of Arc.dylib
+Install this library and change the HEX data of Arc.dylib
 
-CydiaSubstrate => EVANArcSupport
+/Library/Frameworks/CydiaSubstrate.framework/CydiaSubstrate => /Library/MobileSubstrate/DynamicLibraries/zArcSupport.dylib
