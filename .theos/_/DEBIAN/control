@@ -1,0 +1,10 @@
+Package: fun.yfyf.evanarcsupport
+Name: EVANArcSupport
+Architecture: iphoneos-arm
+Description: An awesome framework of some sort!!
+Maintainer: EVAN
+Author: EVAN
+Section: System
+Tag: role::developer
+Version: 0.0.1
+Installed-Size: 72
