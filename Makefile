@@ -5,13 +5,13 @@ export FINALPACKAGE = 1
 
 include $(THEOS)/makefiles/common.mk
 
-FRAMEWORK_NAME = EVANArcSupport
+LIBRARY_NAME = zArcSupport
 
-EVANArcSupport_FILES = EVANArcSupport.xm
-EVANArcSupport_PUBLIC_HEADERS = EVANArcSupport.h
-EVANArcSupport_INSTALL_PATH = /Library/Frameworks
-EVANArcSupport_EXTRA_FRAMEWORKS = CydiaSubstrate
-EVANArcSupport_USE_SUBSTRATE = 1
-EVANArcSupport_CFLAGS = -fobjc-arc -Wno-arc-performSelector-leaks
+zArcSupport_FILES = EVANArcSupport.xm
+zArcSupport_PUBLIC_HEADERS = EVANArcSupport.h
+zArcSupport_INSTALL_PATH = /Library/MobileSubstrate/DynamicLibraries/
+zArcSupport_EXTRA_FRAMEWORKS = CydiaSubstrate
+zArcSupport_USE_SUBSTRATE = 1
+zArcSupport_CFLAGS = -fobjc-arc -Wno-arc-performSelector-leaks
 
-include $(THEOS_MAKE_PATH)/framework.mk
+include $(THEOS_MAKE_PATH)/library.mk

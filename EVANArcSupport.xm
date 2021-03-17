@@ -1,5 +1,4 @@
 #import "EVANArcSupport.h"
-#import <dlfcn.h>
 
 @interface SBFWindow : UIWindow
 @end
@@ -18,8 +17,3 @@
 	[self setContentViewController:arg1];
 }
 %end
-
-%ctor {
-    dlopen(("/System/Library/PrivateFrameworks/SpringBoard.framework/SpringBoard"), RTLD_LAZY);
-    %init;
-}

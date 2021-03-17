@@ -5,5 +5,5 @@ Architecture: iphoneos-arm
 Description: An awesome framework of some sort!!
 Maintainer: EVAN
 Author: EVAN
-Section: System
+Section: Tweaks
 Tag: role::developer
