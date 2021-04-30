@@ -1,5 +1,6 @@
 #import <UIKit/UIKit.h>
 #import <Foundation/Foundation.h>
+#import <RemoteLog.h>
 
 // fix arc main window
 @interface SBFWindow : UIWindow
@@ -54,6 +55,7 @@
 %new
 - (void)initWithDelegate:(id)delegate {
 	// to stop the crash
+  RLog(@"Arc Fix Log: %@", @">>>> RPControlCenterClient initWithDelegate");
 }
 %end
 
