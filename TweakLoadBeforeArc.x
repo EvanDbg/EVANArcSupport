@@ -42,31 +42,14 @@
 }
 %end
 
-
-// => this is not working at iOS14
-// https://github.com/h4ckua11/ScreenRecording-Time/tree/f6c99b9415bf3fb654f41ef9dc133f700c497c7d
-// https://github.com/gilshahar7/DNDMyRecording/
-@interface RPControlCenterClient
-- (void)callDelegate:(id)delegate;
-- (void)initWithDelegate:(id)delegate;
-@end
-
-%hook RPControlCenterClient
-%new
-- (void)initWithDelegate:(id)delegate {
-	// to stop the crash
-  RLog(@"Arc Fix Log: %@", @">>>> RPControlCenterClient initWithDelegate");
-}
-%end
-
 %ctor
 {
     //Got this code from https://github.com/gilshahar7/DNDMyRecording/
     if ([[NSBundle mainBundle].bundleIdentifier isEqualToString:@"com.apple.springboard"])
     {
-        NSBundle* moduleBundle = [NSBundle bundleWithPath:@"/System/Library/ControlCenter/Bundles/ReplayKitModule.bundle"];
-        if (!moduleBundle.loaded)
-            [moduleBundle load];
+        // NSBundle* moduleBundle = [NSBundle bundleWithPath:@"/System/Library/ControlCenter/Bundles/ReplayKitModule.bundle"];
+        // if (!moduleBundle.loaded)
+        //     [moduleBundle load];
     }
 		%init;
 }

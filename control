@@ -1,6 +1,6 @@
-Package: fun.yfyf.arcfix
+Package: fun.yfyf.bigboss.arcfix
 Name: arcfix
-Version: 0.0.3
+Version: 0.0.5
 Architecture: iphoneos-arm
 Description: An awesome MobileSubstrate tweak!
 Maintainer: Soh Satoh & EVAN

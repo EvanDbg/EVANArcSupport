@@ -1,7 +1,8 @@
-TARGET := iphone:clang:latest:7.0
+TARGET := iphone:clang:11.2:7.0
 INSTALL_TARGET_PROCESSES = SpringBoard
 
-DEBUG = 1
+DEBUG = 0
+FINALPACKAGE = 1
 
 include $(THEOS)/makefiles/common.mk
 
@@ -11,7 +12,7 @@ ARCHS = arm64 arm64e
 0arcfix_FILES = TweakLoadBeforeArc.x
 0arcfix_CFLAGS = -fobjc-arc
 
-zarcfix_FILES = TweakLoadAfterArc.x
+zarcfix_FILES = TweakLoadAfterArc.xm
 zarcfix_CFLAGS = -fobjc-arc
 zarcfix_FRAMEWORKS = ReplayKit
 
